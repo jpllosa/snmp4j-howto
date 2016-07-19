@@ -17,7 +17,7 @@ import org.snmp4j.transport.DefaultUdpTransportMapping;
 public class SnmpTrapSender {
 
 	public static void main(String[] args) throws Exception {
-		TransportMapping transport = new DefaultUdpTransportMapping();
+		TransportMapping<UdpAddress> transport = new DefaultUdpTransportMapping();
 		transport.listen();
 
 		CommunityTarget target = new CommunityTarget();
