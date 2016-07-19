@@ -1,0 +1,1 @@
+java -cp bin;lib/snmp4j-2.5.0.jar example.SnmpTrapListener
